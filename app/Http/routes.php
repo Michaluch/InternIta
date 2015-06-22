@@ -4,5 +4,13 @@
 //    return view('welcome');
 //});
 
-Route::any('/', 'welcomeController@index');
+Route::any('/', 'myAuthController@getLogin' );
+
 //Route::get('profile', ['middleware' => 'auth', 'uses' => 'welcomeController@index']);
+Route::any('/login', function() {
+    return "as";
+});
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);

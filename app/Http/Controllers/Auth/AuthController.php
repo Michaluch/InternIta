@@ -27,6 +27,8 @@ class AuthController extends Controller
      *
      * @return void
      */
+
+
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'getLogout']);
@@ -60,5 +62,10 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    public function getRegister()
+    {
+        return 'a';
     }
 }
