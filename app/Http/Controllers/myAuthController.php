@@ -13,6 +13,6 @@ class myAuthController extends Controller
     {
         $login = true;
 
-        return view('layout.main', ['login' => $login]);	
+        return view('layout.main', ['login' => $login]);
     }
 }

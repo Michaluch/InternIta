@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'ef9Ruyo6YWl48EW0e37CxdKydGrdsa91'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -144,7 +144,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         'Jenssegers\Mongodb\MongodbServiceProvider',
-
     ),
 
     /*
