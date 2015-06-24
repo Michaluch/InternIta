@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Support\Facades\DB;
 use App\User;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
@@ -37,10 +38,10 @@ class AuthController extends Controller
      */
 
 
-    public function __construct(Guard $auth, Registrar $registrar)
+    public function __construct()
     {
-        $this->auth = $auth;
-        $this->registrar = $registrar;
+//        $this->auth = $auth;
+//        $this->registrar = $registrar;
 
         $this->middleware('guest', ['except' => 'getLogout']);
     }
