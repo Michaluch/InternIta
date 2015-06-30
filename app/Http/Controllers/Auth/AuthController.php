@@ -84,10 +84,11 @@ class AuthController extends Controller
     }
     public function postLogin(Request $request)
     {
-        if (Auth::attempt(['email' => $request->input('name'), 'password' => $request->input('password')]))
-        {
-            return redirect('/');
-        }
+        // if (Auth::attempt(['email' => $request->input('name'), 'password' => $request->input('password')]))
+        // {
+        //     return redirect('/');
+        // }
+        return $request->input('email');
 
     }
     public function getRegister()

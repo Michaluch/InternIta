@@ -3,9 +3,9 @@
 <head>
     <title>T</title>
 
-    <link rel="stylesheet" href="/internIta.2/public/assets/bower_vendor/bootstrap/dist/css/bootstrap.min.css"/>
-    <script src="/internIta.2/public/assets/bower_vendor/jquery/dist/jquery.js"></script>
-    <script src="/internIta.2/public/assets/bower_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/internita/public/assets/bower_vendor/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="/internita/public/assets/bower_vendor/jquery/dist/jquery.js"></script>
+    <script src="/internita/public/assets/bower_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-static-top">
@@ -32,5 +32,9 @@
         </div>
     </nav>
     @yield('content')
+
+    <script src="/internita/public/assets/bower_vendor/underscore/underscore.js"></script>
+    <script src="/internita/public/assets/bower_vendor/backbone/backbone.js"></script>
+    <script src="/internita/resources/views/layout/login.js"></script>
 </body>
 </html>
